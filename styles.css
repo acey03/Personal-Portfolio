@@ -9,6 +9,11 @@ body{
     background-color: #080808;
     color: #F8F8FF;
 }
+#scroll{
+    height: 100vh; /* Adjust based on your content */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 
 #toolbar{
     overflow: hidden;
@@ -133,6 +138,7 @@ nav ul li a:hover::after{
     font-family: sans-serif;
     font-size: 15px;
 }
+
 
 
 
