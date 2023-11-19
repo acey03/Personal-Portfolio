@@ -23,7 +23,32 @@
     </div>
 
     <div id="About-Me">
-        <h1>About Me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/about-me/bio-section.jpg" class="image active-image" id="bio">
+                    <img src="/images/about-me/interest-section.jpg" class="image" id="interests">
+                    <img src="/images/about-me/education-section.webp" class="image" id="education">
+                </div>
+                <div class="about-col-2">
+                    <h1 class=subtitle>About Me</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('bio')">Bio</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="bio">
+                        <p>Biography Section</p>    
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <p>Interests Section</p>    
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <p>Education Section</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="Projects">
@@ -41,5 +66,58 @@
     <div id="Contact-Me">
         <h1>Contact Me</h1>
     </div>
+
+
+<!-- <script>    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    var tabimgs = document.getElementsByClassName("image");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        for (tabimg of tabimgs){
+            tabimg.classList.remove("active-image")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+        document.getElementById(tabname).classList.add("active-image")
+
+    }
+</script> -->
+<script>
+    var tablinks = document.querySelectorAll('.tab-links');
+    var tabcontents = document.querySelectorAll('.tab-contents');
+    var tabimgs = document.querySelectorAll('.image');
+
+    function opentab(tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove('active-link');
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove('active-tab');
+        }
+        for (var i = 0; i < tabimgs.length; i++) {
+            tabimgs[i].classList.remove('active-image');
+        }
+
+        // Find the index of the clicked tab
+        var index = Array.from(tablinks).findIndex(function (element) {
+            return element.innerText.toLowerCase() === tabname.toLowerCase();
+        });
+
+        // Add the 'active' classes to the clicked tab, content, and image
+        tablinks[index].classList.add('active-link');
+        tabcontents[index].classList.add('active-tab');
+        tabimgs[index].classList.add('active-image');
+    }
+</script>
+
+
+
 </body>
 </html>
