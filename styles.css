@@ -85,15 +85,15 @@ nav ul li a:hover::after{
     font-weight: 600;
 }
 
-.intro{
+/* .intro{
     padding-top: 10px;
     color: #F8F8FF;
-}
+} */
 
 .tab-titles{
     color: #8F95D3;
     display: flex;
-    margin: 10px 0px 30px;
+    margin: 15px 0px 10px;
 }
 
 .tab-links{
@@ -144,6 +144,7 @@ nav ul li a:hover::after{
 
 .bio-section{
     color: #F8F8FF;
+    padding-top: 15px;
     font-family: sans-serif;
     font-size: 16px;
 }
@@ -151,7 +152,7 @@ nav ul li a:hover::after{
 #interests ul li{
     color: #F8F8FF;
     list-style: none;
-    /* padding: 10px; */
+    padding-top: 15px;
     font-family: sans-serif;
     font-size: 16px;
 }
@@ -163,7 +164,7 @@ nav ul li a:hover::after{
 #education ul li{
     color: #F8F8FF;
     list-style: none;
-    /* padding: 10px; */
+    padding-top: 15px;
     font-family: sans-serif;
     font-size: 16px;
 }
@@ -178,20 +179,80 @@ nav ul li a:hover::after{
     padding: 80px;
 }
 
+/* ---------------------------------------------WorkEXP--------------------- */
 
 #Work-Exp{
     padding: 80px;
     color: #8F95D3;
 }
 
+.work-col-1{
+    flex-basis: 60%;
+}
 
+.work-col-2{
+    flex-basis: 35%;
+}
 
+.work-col-2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.tab-links2{
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links2::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #8E05C2;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.tab-links2:hover::after{
+    width: 100%;
+}
+
+.tab-links2.active-link2::after{
+    width: 50%;
+}
+
+.image2{
+    display: none;
+}
+
+.image2.active-image2{
+    display: block;
+}
+
+.tab-contents2{
+    display: none;
+}
+  
+.tab-contents2.active-tab2{
+    display: block;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/* ---------------------------------------------VolEXP--------------------- */
 
 #Vol-Exp{
     width: 100%;
     height: 100vh;
     padding: 80px;
 }
+
 #Contact-Me{
     width: 100%;
     height: 100vh;
