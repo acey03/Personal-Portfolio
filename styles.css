@@ -10,7 +10,7 @@ body{
     color: #F8F8FF;
 }
 #scroll{
-    height: 100vh; /* Adjust based on your content */
+    height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -85,10 +85,15 @@ nav ul li a:hover::after{
     font-weight: 600;
 }
 
-.tab-titles{
+.intro{
+    padding-top: 10px;
     color: #F8F8FF;
+}
+
+.tab-titles{
+    color: #8F95D3;
     display: flex;
-    margin: 10px 0px 40px;
+    margin: 10px 0px 30px;
 }
 
 .tab-links{
@@ -127,35 +132,61 @@ nav ul li a:hover::after{
     display: block;
 }
 
-
 .tab-contents{
     display: none;
 }
   
 .tab-contents.active-tab{
     display: block;
-    color: #F8F8FF;
     font-family: sans-serif;
     font-size: 15px;
 }
 
+.bio-section{
+    color: #F8F8FF;
+    font-family: sans-serif;
+    font-size: 16px;
+}
 
+#interests ul li{
+    color: #F8F8FF;
+    list-style: none;
+    /* padding: 10px; */
+    font-family: sans-serif;
+    font-size: 16px;
+}
 
+#interests ul li span{
+    color: #8E05C2;
+}
 
+#education ul li{
+    color: #F8F8FF;
+    list-style: none;
+    /* padding: 10px; */
+    font-family: sans-serif;
+    font-size: 16px;
+}
 
-
-
+#education ul li span{
+    color: #8E05C2;
+}
 
 #Projects{
     width: 100%;
     height: 100vh;
     padding: 80px;
 }
+
+
 #Work-Exp{
-    width: 100%;
-    height: 100vh;
     padding: 80px;
+    color: #8F95D3;
 }
+
+
+
+
 #Vol-Exp{
     width: 100%;
     height: 100vh;
