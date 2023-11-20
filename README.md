@@ -10,7 +10,7 @@ The tech stack used during the creation of this website was iterative. Each sect
 
 ### License Choice:
 
-
+I decided to go with the MIT License because of its simplicity. It also allows for a user to use my work as long as i am attributed.
 
 ### Website Link:
 [Personal Portfolio - Ali Devjiani](https://amace03.github.io/Personal-Portfolio/)
