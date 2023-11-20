@@ -70,9 +70,9 @@
                 <div class="work-col-1">
                     <h1 class="subtitle">Work Experience</h1>
                     <div class="tab-titles">
-                        <p class="tab-links2 active-link2" onclick="opentab('sales')">Sales</p>
-                        <p class="tab-links2" onclick="opentab('accounting')">Accounting</p>
-                        <p class="tab-links2" onclick="opentab('resume')">Resume</p>
+                        <p class="tab-links2 active-link2" onclick="opentab2('sales')">Sales</p>
+                        <p class="tab-links2" onclick="opentab2('accounting')">Accounting</p>
+                        <p class="tab-links2" onclick="opentab2('resume')">Resume</p>
                     </div>
                     <div class="tab-contents2 active-tab2" id="sales">
                         <p class="sales-section">Sales</p>    
@@ -152,33 +152,33 @@
         tabimgs[index].classList.add('active-image');
     }
 </script>
-<!-- <script>
-    var tablinks = document.querySelectorAll('.tab-links2');
-    var tabcontents = document.querySelectorAll('.tab-contents2');
-    var tabimgs = document.querySelectorAll('.image2');
+<script>
+    var tablinks2 = document.querySelectorAll('.tab-links2');
+    var tabcontents2 = document.querySelectorAll('.tab-contents2');
+    var tabimgs2 = document.querySelectorAll('.image2');
 
-    function opentab(tabname) {
-        for (var i = 0; i < tablinks.length; i++) {
-            tablinks[i].classList.remove('active-link2');
+    function opentab2(tabname) {
+        for (var i = 0; i < tablinks2.length; i++) {
+            tablinks2[i].classList.remove('active-link2');
         }
-        for (var i = 0; i < tabcontents.length; i++) {
-            tabcontents[i].classList.remove('active-tab2');
+        for (var i = 0; i < tabcontents2.length; i++) {
+            tabcontents2[i].classList.remove('active-tab2');
         }
-        for (var i = 0; i < tabimgs.length; i++) {
-            tabimgs[i].classList.remove('active-image2');
+        for (var i = 0; i < tabimgs2.length; i++) {
+            tabimgs2[i].classList.remove('active-image2');
         }
 
         // Find the index of the clicked tab
-        var index = Array.from(tablinks).findIndex(function (element) {
+        var index = Array.from(tablinks2).findIndex(function (element) {
             return element.innerText.toLowerCase() === tabname.toLowerCase();
         });
 
         // Add the 'active' classes to the clicked tab, content, and image
-        tablinks[index].classList.add('active-link2');
-        tabcontents[index].classList.add('active-tab2');
-        tabimgs[index].classList.add('active-image2');
+        tablinks2[index].classList.add('active-link2');
+        tabcontents2[index].classList.add('active-tab2');
+        tabimgs2[index].classList.add('active-image2');
     }
-</script> -->
+</script>
 
 
 
