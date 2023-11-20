@@ -58,7 +58,7 @@ nav ul li a:hover::after{
 
 #About-Me{
     padding: 120px;
-    color: #8F95D3;
+    color: #F8F8FF;
 }
 
 .row{
@@ -183,7 +183,7 @@ nav ul li a:hover::after{
 
 #Work-Exp{
     padding: 80px;
-    color: #8F95D3;
+    color: #F8F8FF;
 }
 
 .work-col-1{
@@ -242,7 +242,54 @@ nav ul li a:hover::after{
 .tab-contents2.active-tab2{
     display: block;
     font-family: sans-serif;
+    color: #F8F8FF;
     font-size: 15px;
+}
+
+.sales-section{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.bookkeeping-section{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.Date{
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: #8F95D3;
+}
+
+#sales ul{
+    padding: 15px;
+}
+
+#sales ul li{
+    padding: 8px;
+}
+
+#bookkeeping ul{
+    /* list-style-type: none; */
+    padding: 15px;  
+}
+
+#bookkeeping ul li{
+    padding: 8px;
+}
+
+.resume-section{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+#resume a{
+    text-decoration: none;
+    padding-top: 0px;
+    color: #8F95D3;
 }
 
 /* ---------------------------------------------VolEXP--------------------- */
