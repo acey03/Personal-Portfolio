@@ -32,14 +32,14 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class=subtitle>About Me</h1>
-                        <!-- <p class="intro">Hi, My name is Ali Devjiani!</p> -->
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('bio')">Bio</p>
                             <p class="tab-links" onclick="opentab('interests')">Interests</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
                         <div class="tab-contents active-tab" id="bio">
-                            <p class="bio-section">Hi, my name is Ali Devjiani! <br>I am a 3rd year Computer Science student at SFU. I was born and raised<br>in Pakistan and moved to Vancouver Canada in 2015. I enjoy experimenting <br>and am always open to opportunities</p>    
+                            <p class="bio-section">Hi, my name is Ali Devjiani!
+                            <p class="bio-section2">I am a 3rd year Computer Science student at SFU. I was born and raised<br>in Pakistan and moved to Vancouver Canada in 2015. I enjoy experimenting <br>and am always open to opportunities</p>    
                         </div>
                         <div class="tab-contents" id="interests">
                             <ul>
@@ -140,28 +140,8 @@
         </div>
     </div>
 
+<!-- -----------------------------------------SCRIPTS------------------------------------- -->
 
-<!-- <script>    
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    var tabimgs = document.getElementsByClassName("image");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        for (tabimg of tabimgs){
-            tabimg.classList.remove("active-image")
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
-        document.getElementById(tabname).classList.add("active-image")
-
-    }
-</script> -->
 <script>
     var tablinks = document.querySelectorAll('.tab-links');
     var tabcontents = document.querySelectorAll('.tab-contents');
