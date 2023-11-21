@@ -21,25 +21,166 @@
             </ul>
         </nav>
     </div>
+    <div id="scroll">
+        <div id="About-Me">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/images/about-me/bio-section.jpg" class="image active-image" id="bio">
+                        <img src="/images/about-me/interest-section.jpg" class="image" id="interests">
+                        <img src="/images/about-me/education-section.webp" class="image" id="education">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class=subtitle>About Me</h1>
+                        <!-- <p class="intro">Hi, My name is Ali Devjiani!</p> -->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('bio')">Bio</p>
+                            <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="bio">
+                            <p class="bio-section">Hi, my name is Ali Devjiani! <br>I am a 3rd year Computer Science student at SFU. I was born and raised<br>in Pakistan and moved to Vancouver Canada in 2015. I enjoy experimenting <br>and am always open to opportunities</p>    
+                        </div>
+                        <div class="tab-contents" id="interests">
+                            <ul>
+                                <li><span>Sports</span><br>I love playing Soccer, Badminton, Volleyball, etc.</li>
+                                <li><span>Games</span><br>Some games I play include Apex, Fifa, some gachas</li>
+                                <li><span>Reading</span><br>I really enjoy reading mangas, and webtoons</li>
+                                <li><span>Designing</span><br>I love designing and experimenting with things, I learn best that way</li>
+                                <li><span>Travelling</span><br>I also love travelling, meeting different people, and learning about new cultures</li>
+                                
+                            </ul>    
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Simon Fraser University - Bsc in Computing Science</li>
+                            </ul>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div id="About-Me">
-        <h1>About Me</h1>
+        <div id="Projects">
+            <h1>Projects</h1>
+        </div>
+
+        <div id="Work-Exp">
+            <div class="row">
+                <div class="work-col-1">
+                    <h1 class="subtitle">Work Experience</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links2 active-link2" onclick="opentab('sales')">Sales</p>
+                        <p class="tab-links2" onclick="opentab('accounting')">Accounting</p>
+                        <p class="tab-links2" onclick="opentab('resume')">Resume</p>
+                    </div>
+                    <div class="tab-contents2 active-tab2" id="sales">
+                        <p class="sales-section">Sales</p>    
+                    </div>
+                    <div class="tab-contents2" id="accounting">
+                        <p class="accounting-section">Accounting</p>
+                    </div>
+                    <div class="tab-contents2" id="resume">
+                        <p class="resume">Resume section</p>
+                    </div>
+                </div>
+                
+                <div class="work-col-2">
+                    <img src="/images/favicon.png" class="image2 active-image2" id="sales">
+                    <img src="/images/color-palette.png" class="image2" id="accounting">
+                    <img src="/images/white logo.png" class="image2" id="resume">
+                </div>
+
+            </div>
+        </div>
+        
+        <div id="Vol-Exp">
+            <h1>Volunteer Experience</h1>
+        </div>
+        
+        <div id="Contact-Me">
+            <h1>Contact Me</h1>
+        </div>
     </div>
 
-    <div id="Projects">
-        <h1>Projects</h1>
-    </div>
 
-    <div id="Work-Exp">
-        <h1>Work Experience</h1>
-    </div>
-    
-    <div id="Vol-Exp">
-        <h1>Volunteer Experience</h1>
-    </div>
-    
-    <div id="Contact-Me">
-        <h1>Contact Me</h1>
-    </div>
+<!-- <script>    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    var tabimgs = document.getElementsByClassName("image");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        for (tabimg of tabimgs){
+            tabimg.classList.remove("active-image")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+        document.getElementById(tabname).classList.add("active-image")
+
+    }
+</script> -->
+<script>
+    var tablinks = document.querySelectorAll('.tab-links');
+    var tabcontents = document.querySelectorAll('.tab-contents');
+    var tabimgs = document.querySelectorAll('.image');
+
+    function opentab(tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove('active-link');
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove('active-tab');
+        }
+        for (var i = 0; i < tabimgs.length; i++) {
+            tabimgs[i].classList.remove('active-image');
+        }
+
+        // Find the index of the clicked tab
+        var index = Array.from(tablinks).findIndex(function (element) {
+            return element.innerText.toLowerCase() === tabname.toLowerCase();
+        });
+
+        // Add the 'active' classes to the clicked tab, content, and image
+        tablinks[index].classList.add('active-link');
+        tabcontents[index].classList.add('active-tab');
+        tabimgs[index].classList.add('active-image');
+    }
+</script>
+<!-- <script>
+    var tablinks = document.querySelectorAll('.tab-links2');
+    var tabcontents = document.querySelectorAll('.tab-contents2');
+    var tabimgs = document.querySelectorAll('.image2');
+
+    function opentab(tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove('active-link2');
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove('active-tab2');
+        }
+        for (var i = 0; i < tabimgs.length; i++) {
+            tabimgs[i].classList.remove('active-image2');
+        }
+
+        // Find the index of the clicked tab
+        var index = Array.from(tablinks).findIndex(function (element) {
+            return element.innerText.toLowerCase() === tabname.toLowerCase();
+        });
+
+        // Add the 'active' classes to the clicked tab, content, and image
+        tablinks[index].classList.add('active-link2');
+        tabcontents[index].classList.add('active-tab2');
+        tabimgs[index].classList.add('active-image2');
+    }
+</script> -->
+
+
+
 </body>
 </html>
