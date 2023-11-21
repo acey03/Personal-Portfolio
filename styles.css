@@ -16,6 +16,7 @@ body{
 }
 
 #toolbar{
+    z-index: 2;
     overflow: hidden;
     background: #440381;
     width: 100%;
@@ -58,6 +59,7 @@ nav ul li a:hover::after{
 
 #About-Me{
     padding: 120px;
+    margin-top: 20px;
     color: #F8F8FF;
 }
 
@@ -81,14 +83,8 @@ nav ul li a:hover::after{
 }
 
 .subtitle{
-    /* font-size: 60px; */
     font-weight: 600;
 }
-
-/* .intro{
-    padding-top: 10px;
-    color: #F8F8FF;
-} */
 
 .tab-titles{
     color: #8F95D3;
@@ -143,8 +139,15 @@ nav ul li a:hover::after{
 }
 
 .bio-section{
-    color: #F8F8FF;
+    color: #8E05C2;
     padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.bio-section2{
+    color: #F8F8FF;
     font-family: sans-serif;
     font-size: 16px;
 }
@@ -173,13 +176,13 @@ nav ul li a:hover::after{
     color: #8E05C2;
 }
 
-#Projects{
+
+/* --------------------------------------------Projects--------------------- */
+/* #Projects{
     width: 100%;
     height: 100vh;
     padding: 80px;
-}
-
-/* --------------------------------------------Projects--------------------- */
+} */
 
 #Projects{
     padding: 80px;
@@ -188,7 +191,6 @@ nav ul li a:hover::after{
 .projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* grid-template-columns: auto auto; */
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -348,16 +350,128 @@ nav ul li a:hover::after{
 /* ---------------------------------------------VolEXP--------------------- */
 
 #Vol-Exp{
-    width: 100%;
-    height: 100vh;
     padding: 80px;
+    color: #F8F8FF;
+}
+
+.vol-col-1{
+    flex-basis: 60%;
+}
+
+.vol-col-2{
+    flex-basis: 35%;
+}
+
+.vol-col-2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.tab-links3{
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links3::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #8E05C2;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.tab-links3:hover::after{
+    width: 100%;
+}
+
+.tab-links3.active-link3::after{
+    width: 50%;
+}
+
+.image3{
+    display: none;
+}
+
+.image3.active-image3{
+    display: block;
+}
+
+.tab-contents3{
+    display: none;
+}
+  
+.tab-contents3.active-tab3{
+    display: block;
+    font-family: sans-serif;
+    color: #F8F8FF;
+    font-size: 15px;
+}
+
+.meye-section{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.Date{
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: #8F95D3;
+}
+
+#meye ul{
+    padding: 15px;
+}
+
+#meye ul li{
+    padding: 8px;
 }
 
 
 /* ---------------------------------------------ContactMe------------------ */
 
 #Contact-Me{
-    width: 100%;
-    height: 100vh;
-    padding: 80px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.hyperlinks{
+    /* width: 100%;
+    height: 8vh; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.hyperlinks ul{
+    list-style: none;
+    /* padding: 0; */
+    display: flex;
+    justify-content: center;
+}
+
+.hyperlinks ul li{
+    margin: 0 20px;
+}
+
+.hyperlinks ul li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #440381;
+    transition: color 0.5s, transform 0.5s;
+}
+
+.hyperlinks ul li a:hover{
+    color: #8F95D3;
+    transform: translateY(-5px);
 }
