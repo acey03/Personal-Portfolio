@@ -341,10 +341,19 @@ nav ul li a:hover::after{
     padding-bottom: 8px;
 }
 
-#resume a{
+#resume p{
+    padding-bottom: 10px;
+}
+
+#resume p a{
     text-decoration: none;
     padding-top: 0px;
     color: #8F95D3;
+    transition: 0.2s;
+}
+
+#resume p a:hover{
+    color: #8E05C2;
 }
 
 /* ---------------------------------------------VolEXP--------------------- */
@@ -467,11 +476,11 @@ nav ul li a:hover::after{
 .hyperlinks ul li a{
     font-size: 24px;
     text-decoration: none;
-    color: #440381;
+    color: #8F95D3;
     transition: color 0.5s, transform 0.5s;
 }
 
 .hyperlinks ul li a:hover{
-    color: #8F95D3;
+    color: #8E05C2;
     transform: translateY(-5px);
 }
